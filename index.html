@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetTreats - Order Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SweetTreats</h1>
+        <p>Delicious sweets and scones made with love</p>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>Scone - R10</li>
+                <li>Chocolate Cupcake - R12</li>
+                <li>Jam Tart - R8</li>
+                <li>Peanut Brittle - R5</li>
+            </ul>
+        </section>
+
+        <section id="order">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="item">Choose an item:</label>
+                <select id="item" required>
+                    <option value="Scone">Scone - R10</option>
+                    <option value="Chocolate Cupcake">Chocolate Cupcake - R12</option>
+                    <option value="Jam Tart">Jam Tart - R8</option>
+                    <option value="Peanut Brittle">Peanut Brittle - R5</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" required>
+
+                <button type="submit">Submit Order</button>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
